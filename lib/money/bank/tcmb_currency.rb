@@ -15,11 +15,11 @@ class Money
     class TcmbCurrency < Money::Bank::VariableExchange
 
       class CrossRate < ActiveRecord::Base
-        attr_accessible :code, :name, :rate, :date
+        #attr_accessible :code, :name, :rate, :date
       end
 
       class CurrencyType < ActiveRecord::Base
-        attr_accessible :currency
+        #attr_accessible :currency
       end
 
       attr_reader :rates
